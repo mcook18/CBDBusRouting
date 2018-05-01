@@ -1,0 +1,29 @@
+﻿<Page x:Class="CBDBusRouting.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CBDBusRouting"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid Background="White">
+        <Label Content="ID: " HorizontalAlignment="Left" Height="32.725" Margin="10,10,0,0" VerticalAlignment="Top" Width="178.422" FontSize="14"/>
+        <!--This lable will be auto populated with the next ID to use for the group -->
+        <Label Content="Name: " HorizontalAlignment="Left" Height="31.886" Margin="10,47.725,0,0" VerticalAlignment="Top" Width="86.209" FontSize="14"/>
+        <Label Content="Location: " HorizontalAlignment="Left" Height="36.803" Margin="10,84.611,0,0" VerticalAlignment="Top" Width="86.209" FontSize="14"/>
+        <Label Content="Leader: " HorizontalAlignment="Left" Height="33.197" Margin="10,121.414,0,0" VerticalAlignment="Top" Width="71.455" FontSize="14"/>
+        <Label Content="Group Size: " HorizontalAlignment="Left" Height="31.967" Margin="10,154.611,0,0" VerticalAlignment="Top" Width="86.209" FontSize="14"/>
+        <Label Content="Student Leader:" HorizontalAlignment="Left" Height="31.885" Margin="10,191.578,0,0" VerticalAlignment="Top" Width="108.34" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="18.361" Margin="145.389,47.725,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.131"/>
+        <TextBox HorizontalAlignment="Left" Height="20.82" Margin="145.389,84.611,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.131"/>
+        <TextBox HorizontalAlignment="Left" Height="20.82" Margin="145.389,121.414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.131"/>
+        <TextBox HorizontalAlignment="Left" Height="18.361" Margin="145.389,154.611,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.131"/>
+        <TextBox HorizontalAlignment="Left" Height="18.361" Margin="145.389,191.578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172.131"/>
+        <Label Content="Wheel Chair Access" HorizontalAlignment="Left" Height="31.885" Margin="10,228.463,0,0" VerticalAlignment="Top" Width="148.914" FontSize="14"/>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Height="15.901" Margin="163.914,236.62,0,0" VerticalAlignment="Top" Width="78.606"/>
+        <CheckBox Content="No" HorizontalAlignment="Left" Height="15.901" Margin="238.914,236.62,0,0" VerticalAlignment="Top" Width="78.606" RenderTransformOrigin="0.515,2.005"/>
+        <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="185.25,330.468,0,0" VerticalAlignment="Top" Width="427.139"/>
+    </Grid>
+</Page>
