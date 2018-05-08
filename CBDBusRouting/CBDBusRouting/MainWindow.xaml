@@ -30,6 +30,11 @@
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
+                    <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="268.314,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" Grid.Column="1">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
                     <!--<ItemsControl ItemsSource=""/> 
                         this is where we will have the user select an item in the list then hit one either edit or delete-->
                 </Grid>
