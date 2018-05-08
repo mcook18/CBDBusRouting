@@ -1,0 +1,69 @@
+﻿<Window x:Class="CBDBusRouting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CBDBusRouting"
+        mc:Ignorable="d"
+        Title="Community Building Day Bus Routing" Height="600" Width="1200">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="570.4" VerticalAlignment="Top" Width="1193.6" TabStripPlacement="Top">
+            <TabItem Header="Groups" FontSize="14">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="105*"/>
+                        <ColumnDefinition Width="1082*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Add New Group" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2"/>
+                    <Button Content="Edit Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Content="Delete Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <!--<ItemsControl ItemsSource=""/> 
+                        this is where we will have the user select an item in the list then hit one either edit or delete-->
+                </Grid>
+            </TabItem>
+            <TabItem Header="Busses" BorderBrush="#FF8E0000" FontSize="14">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="White">
+                    <Button Content="Add New Bus" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2"/>
+                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FF797979"/>
+                        </Button.Effect>
+                    </Button>
+                    <!--<ItemsControl ItemsSource=""/> 
+                        this is where we will have the user select an item in the list then hit either edit or delete-->
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>

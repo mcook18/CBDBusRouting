@@ -19,9 +19,7 @@
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2">
-                        <ToggleButton Content="ToggleButton" IsChecked="True" />
-                    </ListBox>
+                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2"/>
                     <Button Content="Edit Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
