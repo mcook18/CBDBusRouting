@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="White">
+    <Grid Background="#FFEBEBEB">
         <Label Content="ID: " HorizontalAlignment="Left" Height="32.725" Margin="10,10,0,0" VerticalAlignment="Top" Width="178.422" FontSize="14"/>
         <!--This lable will be auto populated with the next ID to use for the group -->
         <Label Content="Name: " HorizontalAlignment="Left" Height="31.886" Margin="10,47.725,0,0" VerticalAlignment="Top" Width="86.209" FontSize="14"/>
@@ -24,6 +24,10 @@
         <Label Content="Wheel Chair Access" HorizontalAlignment="Left" Height="31.885" Margin="10,228.463,0,0" VerticalAlignment="Top" Width="148.914" FontSize="14"/>
         <CheckBox Content="Yes" HorizontalAlignment="Left" Height="15.901" Margin="163.914,236.62,0,0" VerticalAlignment="Top" Width="78.606"/>
         <CheckBox Content="No" HorizontalAlignment="Left" Height="15.901" Margin="238.914,236.62,0,0" VerticalAlignment="Top" Width="78.606" RenderTransformOrigin="0.515,2.005"/>
-        <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="185.25,330.468,0,0" VerticalAlignment="Top" Width="427.139"/>
+        <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="185.25,330.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Page>

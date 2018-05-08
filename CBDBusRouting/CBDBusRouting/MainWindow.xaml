@@ -9,25 +9,23 @@
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="570.4" VerticalAlignment="Top" Width="1193.6" TabStripPlacement="Top">
             <TabItem Header="Groups" FontSize="14">
-                <Grid Background="White">
+                <Grid Background="#FFEBEBEB">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="105*"/>
                         <ColumnDefinition Width="1082*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Add New Group" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+                    <Button Content="Add New Group" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2">
-                        <ToggleButton Content="ToggleButton" IsChecked="True" />
-                    </ListBox>
-                    <Button Content="Edit Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2" Background="#FFEBEBEB"/>
+                    <Button Content="Edit Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Delete Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                    <Button Content="Delete Group" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
@@ -43,19 +41,19 @@
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
-                <Grid Background="White">
-                    <Button Content="Add New Bus" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+                <Grid Background="#FFEBEBEB">
+                    <Button Content="Add New Bus" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2"/>
-                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                    <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2" Background="#FFEBEBEB"/>
+                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1">
+                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
