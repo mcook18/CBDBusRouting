@@ -28,5 +28,6 @@
             </Button.Effect>
         </Button>
         <ComboBox HorizontalAlignment="Left" Height="23.054" Margin="371.564,138.885,0,0" VerticalAlignment="Top" Width="232.825" FontFamily="Leelawadee UI"/>
+        <Label Content="Groups" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="123.711" FontSize="36" FontFamily="Leelawadee UI"/>
     </Grid>
 </Page>

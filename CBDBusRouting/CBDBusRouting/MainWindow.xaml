@@ -14,7 +14,7 @@
                         <ColumnDefinition Width="105*"/>
                         <ColumnDefinition Width="1082*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Add New Group" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+                    <Button Content="Add New Group" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="146.4" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
@@ -47,23 +47,23 @@
                     </LinearGradientBrush>
                 </TabItem.Background>
                 <Grid Background="#FFEBEBEB">
-                    <Button Content="Add New Bus" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
+                    <Button Content="Add New Bus" HorizontalAlignment="Left" Height="28.8" Margin="7,12.54,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
                     <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2" Background="#FFEBEBEB"/>
-                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
+                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White">
+                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="373.367,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+                    <Button Content="Give Me Some Results!" HorizontalAlignment="Left" Height="38.839" Margin="373.367,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
