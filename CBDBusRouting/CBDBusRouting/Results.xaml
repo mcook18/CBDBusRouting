@@ -9,6 +9,11 @@
       Title="Page3">
 
     <Grid Background="#FFEBEBEB">
-        
+        <Button Content="Export It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
     </Grid>
 </Page>
