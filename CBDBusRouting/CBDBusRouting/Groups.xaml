@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="#FFEBEBEB">
+    <Grid Background="White">
         <!--This lable will be auto populated with the next ID to use for the group -->
         <Label Content="Name: " HorizontalAlignment="Left" Height="40.037" Margin="189.6,92.569,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
         <Label Content="Location: " HorizontalAlignment="Left" Height="46.211" Margin="189.6,138.885,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
@@ -24,10 +24,17 @@
         <CheckBox Content="No" HorizontalAlignment="Left" Height="19.966" Margin="493.837,329.754,0,0" VerticalAlignment="Top" Width="104.472" RenderTransformOrigin="0.515,2.005" FontFamily="Leelawadee UI"/>
         <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
             <Button.Effect>
-                <DropShadowEffect/>
+                <DropShadowEffect Color="#FF5D5D5D"/>
             </Button.Effect>
         </Button>
-        <ComboBox HorizontalAlignment="Left" Height="23.054" Margin="371.564,138.885,0,0" VerticalAlignment="Top" Width="232.825" FontFamily="Leelawadee UI"/>
+        <ComboBox HorizontalAlignment="Left" Height="23.054" Margin="371.564,138.885,0,0" VerticalAlignment="Top" Width="226.745" FontFamily="Leelawadee UI">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
         <Label Content="Groups" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="123.711" FontSize="36" FontFamily="Leelawadee UI"/>
     </Grid>
 </Page>

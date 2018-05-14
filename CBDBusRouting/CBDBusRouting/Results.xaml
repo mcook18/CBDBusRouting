@@ -8,12 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page3">
 
-    <Grid Background="#FFEBEBEB">
+    <Grid Background="White">
         <Button Content="Export It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click">
             <Button.Effect>
-                <DropShadowEffect/>
+                <DropShadowEffect Color="#FF5D5D5D"/>
             </Button.Effect>
         </Button>
+        <ListView HorizontalAlignment="Left" Height="264.754" Margin="10,80.84,0,0" VerticalAlignment="Top" Width="780">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Results" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="123.711" FontSize="36" FontFamily="Leelawadee UI"/>
 
     </Grid>
 </Page>
