@@ -1,33 +1,33 @@
-﻿<Page x:Class="CBDBusRouting.Page1"
+﻿<Page x:Class="CBDBusRouting.GroupsPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CBDBusRouting"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page1">
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="Groups Page">
 
     <Grid Background="White">
         <!--This lable will be auto populated with the next ID to use for the group -->
-        <Label Content="Name: " HorizontalAlignment="Left" Height="40.037" Margin="189.6,92.569,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-        <Label Content="Location: " HorizontalAlignment="Left" Height="46.211" Margin="189.6,138.885,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-        <Label Content="Leader: " HorizontalAlignment="Left" Height="41.684" Margin="189.6,185.096,0,0" VerticalAlignment="Top" Width="94.967" FontSize="14" FontFamily="Leelawadee UI"/>
-        <Label Content="Group Size: " HorizontalAlignment="Left" Height="40.139" Margin="189.6,226.78,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-        <Label Content="Student Leader:" HorizontalAlignment="Left" Height="40.037" Margin="189.6,273.197,0,0" VerticalAlignment="Top" Width="143.989" FontSize="14" FontFamily="Leelawadee UI"/>
-        <TextBox HorizontalAlignment="Left" Height="23.055" Margin="369.538,92.569,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-        <TextBox HorizontalAlignment="Left" Height="23.055" Margin="369.538,185.096,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-        <TextBox HorizontalAlignment="Left" Height="23.055" Margin="369.538,226.78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-        <TextBox HorizontalAlignment="Left" Height="23.055" Margin="369.538,273.197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-        <Label Content="Wheel Chair Access" HorizontalAlignment="Left" Height="40.036" Margin="189.6,319.512,0,0" VerticalAlignment="Top" Width="197.913" FontSize="14" FontFamily="Leelawadee UI"/>
-        <CheckBox Content="Yes" HorizontalAlignment="Left" Height="19.966" Margin="394.159,329.754,0,0" VerticalAlignment="Top" Width="104.472" FontFamily="Leelawadee UI"/>
-        <CheckBox Content="No" HorizontalAlignment="Left" Height="19.966" Margin="493.837,329.754,0,0" VerticalAlignment="Top" Width="104.472" RenderTransformOrigin="0.515,2.005" FontFamily="Leelawadee UI"/>
-        <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+        <Label Content="Name: " HorizontalAlignment="Left" Height="53.205" Margin="331.986,141.324,0,0" VerticalAlignment="Top" Width="152.257" FontSize="14" FontFamily="Leelawadee UI"/>
+        <Label Content="Location: " HorizontalAlignment="Left" Height="61.408" Margin="331.986,202.873,0,0" VerticalAlignment="Top" Width="152.257" FontSize="14" FontFamily="Leelawadee UI"/>
+        <Label Content="Leader: " HorizontalAlignment="Left" Height="55.393" Margin="331.986,264.281,0,0" VerticalAlignment="Top" Width="126.199" FontSize="14" FontFamily="Leelawadee UI"/>
+        <Label Content="Group Size: " HorizontalAlignment="Left" Height="53.34" Margin="331.986,319.674,0,0" VerticalAlignment="Top" Width="152.257" FontSize="14" FontFamily="Leelawadee UI"/>
+        <Label Content="Student Leader:" HorizontalAlignment="Left" Height="53.205" Margin="331.986,381.356,0,0" VerticalAlignment="Top" Width="191.343" FontSize="14" FontFamily="Leelawadee UI"/>
+        <TextBox HorizontalAlignment="Left" Height="30.638" Margin="571.101,141.324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304.008" FontFamily="Leelawadee UI"/>
+        <TextBox HorizontalAlignment="Left" Height="30.637" Margin="571.101,264.281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304.008" FontFamily="Leelawadee UI"/>
+        <TextBox HorizontalAlignment="Left" Height="30.637" Margin="571.101,319.674,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304.008" FontFamily="Leelawadee UI"/>
+        <TextBox HorizontalAlignment="Left" Height="30.639" Margin="571.101,381.356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304.008" FontFamily="Leelawadee UI"/>
+        <Label Content="Wheel Chair Access" HorizontalAlignment="Left" Height="53.204" Margin="331.986,442.903,0,0" VerticalAlignment="Top" Width="263.002" FontSize="14" FontFamily="Leelawadee UI"/>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Height="26.531" Margin="603.819,456.515,0,0" VerticalAlignment="Top" Width="138.83" FontFamily="Leelawadee UI"/>
+        <CheckBox Content="No" HorizontalAlignment="Left" Height="26.531" Margin="736.278,456.515,0,0" VerticalAlignment="Top" Width="138.831" RenderTransformOrigin="0.515,2.005" FontFamily="Leelawadee UI"/>
+        <Button Content="Save It!!" HorizontalAlignment="Left" Height="51.612" Margin="315.573,521.249,0,0" VerticalAlignment="Top" Width="567.616" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click">
             <Button.Effect>
                 <DropShadowEffect Color="#FF5D5D5D"/>
             </Button.Effect>
         </Button>
-        <ComboBox HorizontalAlignment="Left" Height="23.054" Margin="371.564,138.885,0,0" VerticalAlignment="Top" Width="226.745" FontFamily="Leelawadee UI">
+        <ComboBox HorizontalAlignment="Left" Height="30.636" Margin="573.793,202.873,0,0" VerticalAlignment="Top" Width="301.316" FontFamily="Leelawadee UI">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -35,6 +35,6 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Groups" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="123.711" FontSize="36" FontFamily="Leelawadee UI"/>
+        <Label Content="Groups" HorizontalAlignment="Left" Height="94.138" Margin="493.442,31.6,0,0" VerticalAlignment="Top" Width="164.398" FontSize="36" FontFamily="Leelawadee UI"/>
     </Grid>
 </Page>

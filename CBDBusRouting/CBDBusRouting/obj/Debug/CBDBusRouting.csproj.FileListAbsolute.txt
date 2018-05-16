@@ -20,7 +20,6 @@ C:\Users\mcnad\Source\Repos\CBDBusRouting\CBDBusRouting\obj\Debug\Page1.baml
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\bin\Debug\CBDBusRouting.exe.config
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\bin\Debug\CBDBusRouting.exe
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\bin\Debug\CBDBusRouting.pdb
-C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\CBDBusRouting.csprojResolveAssemblyReference.cache
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\LoadingPage.g.cs
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\MainWindow.g.cs
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\Groups.g.cs
@@ -42,3 +41,5 @@ C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\CBDBu
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\CBDBusRouting.pdb
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\Locations.g.cs
 C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\Locations.baml
+C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\Home.g.cs
+C:\Users\mcnad\Desktop\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\Home.baml

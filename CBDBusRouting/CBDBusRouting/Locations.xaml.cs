@@ -24,5 +24,12 @@ namespace CBDBusRouting
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
+
+        }
     }
 }

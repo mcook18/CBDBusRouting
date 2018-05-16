@@ -5,36 +5,25 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CBDBusRouting"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="700" d:DesignWidth="1200"
       Title="Locations">
 
     <Grid Background="White">
-        <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
-            <Button.Effect>
-                <DropShadowEffect Color="#FF5D5D5D"/>
-            </Button.Effect>
-        </Button>
-        <Label Content="Location" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="149.531" FontSize="36" FontFamily="Leelawadee UI"/>
-        <Label Content="Nickname: " HorizontalAlignment="Left" Height="40.037" Margin="189.6,92.569,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-        <TextBox HorizontalAlignment="Left" Height="23.055" Margin="369.538,92.569,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-        <Label Content="Address:&#x9;" HorizontalAlignment="Left" Height="40.037" Margin="189.6,132.606,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-        <Label Content="City:" HorizontalAlignment="Left" Height="40.037" Margin="189.6,172.643,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
         <Grid Background="White">
-            <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="177.25,378.468,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+            <Button Content="Save It!!" HorizontalAlignment="Left" Height="55.957" Margin="282.988,560.53,0,0" VerticalAlignment="Top" Width="634.926" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click">
                 <Button.Effect>
                     <DropShadowEffect Color="#FF5D5D5D"/>
                 </Button.Effect>
             </Button>
-            <Label Content="Location" HorizontalAlignment="Left" Height="70.84" Margin="311.099,10,0,0" VerticalAlignment="Top" Width="149.531" FontSize="36" FontFamily="Leelawadee UI"/>
-            <!--This lable will be auto populated with the next ID to use for the group -->
-            <Label Content="Nickname: " HorizontalAlignment="Left" Height="40.037" Margin="189.6,92.569,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-            <TextBox HorizontalAlignment="Left" Height="23.055" Margin="304.176,92.569,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-            <Label Content="Address:&#x9;" HorizontalAlignment="Left" Height="40.037" Margin="189.6,132.606,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-            <Label Content="City:" HorizontalAlignment="Left" Height="40.037" Margin="189.6,172.643,0,0" VerticalAlignment="Top" Width="114.576" FontSize="14" FontFamily="Leelawadee UI"/>
-            <Label Content="State:" HorizontalAlignment="Left" Height="40.037" Margin="189.6,212.68,0,0" VerticalAlignment="Top" Width="55.56" FontSize="14" FontFamily="Leelawadee UI"/>
-            <TextBox HorizontalAlignment="Left" Height="23.055" Margin="304.176,132.606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-            <TextBox HorizontalAlignment="Left" Height="23.055" Margin="304.176,172.643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI"/>
-            <ComboBox HorizontalAlignment="Left" Height="23.054" Margin="304.176,212.68,0,0" VerticalAlignment="Top" Width="228.771" FontFamily="Leelawadee UI">
+            <Label Content="Location" HorizontalAlignment="Left" Height="102.06" Margin="481.949,29.672,0,0" VerticalAlignment="Top" Width="222.273" FontSize="36" FontFamily="Leelawadee UI"/>
+            <Label Content="Nickname: " HorizontalAlignment="Left" Height="33.216" Margin="301.346,148.63,0,0" VerticalAlignment="Top" Width="170.313" FontSize="14" FontFamily="Leelawadee UI"/>
+            <TextBox HorizontalAlignment="Left" Height="33.216" Margin="471.659,148.63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340.059" FontFamily="Leelawadee UI"/>
+            <Label Content="Address:&#x9;" HorizontalAlignment="Left" Height="33.216" Margin="295.786,206.312,0,0" VerticalAlignment="Top" Width="146.237" FontSize="14" FontFamily="Leelawadee UI"/>
+            <Label Content="City:" HorizontalAlignment="Left" Height="33.215" Margin="295.786,263.995,0,0" VerticalAlignment="Top" Width="133.439" FontSize="14" FontFamily="Leelawadee UI"/>
+            <Label Content="State:" HorizontalAlignment="Left" Height="33.214" Margin="301.346,321.677,0,0" VerticalAlignment="Top" Width="82.588" FontSize="14" FontFamily="Leelawadee UI"/>
+            <TextBox HorizontalAlignment="Left" Height="33.216" Margin="471.659,206.312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340.059" FontFamily="Leelawadee UI"/>
+            <TextBox HorizontalAlignment="Left" Height="33.215" Margin="471.659,263.995,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340.059" FontFamily="Leelawadee UI"/>
+            <ComboBox HorizontalAlignment="Left" Height="33.214" Margin="471.659,321.677,0,0" VerticalAlignment="Top" Width="340.059" FontFamily="Leelawadee UI">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>

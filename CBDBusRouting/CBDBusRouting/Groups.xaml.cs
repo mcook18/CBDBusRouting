@@ -18,11 +18,18 @@ namespace CBDBusRouting
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class GroupsPage : Page
     {
-        public Page1()
+        public GroupsPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //Go back to the home screen and save it. 
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
         }
     }
 }

@@ -18,16 +18,17 @@ namespace CBDBusRouting
     /// <summary>
     /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class Page3 : Page
+    public partial class Results : Page
     {
-        public Page3()
+        public Results()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            //this is where we will output our csv of the results
+        
         }
     }
 }

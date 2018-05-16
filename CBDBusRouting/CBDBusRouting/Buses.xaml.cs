@@ -18,11 +18,17 @@ namespace CBDBusRouting
     /// <summary>
     /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Busses : Page
     {
-        public Page2()
+        public Busses()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
         }
     }
 }
