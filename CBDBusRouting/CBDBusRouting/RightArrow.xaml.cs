@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace CBDBusRouting
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Interaction logic for RightArrow.xaml
     /// </summary>
-    public partial class BusesPage : Page
+    public partial class RightArrow : UserControl
     {
-        public BusesPage()
+        public RightArrow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Home home = new Home();
-            this.NavigationService.Navigate(home);
-
         }
     }
 }
