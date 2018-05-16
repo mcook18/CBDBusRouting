@@ -47,7 +47,14 @@ namespace CBDBusRouting
 
         private void Button_Click_R(object sender, RoutedEventArgs e)
         {
-
+            // Refresh locations here
         }
+
+        private void Button_Click_Gimme(object sender, RoutedEventArgs e)
+        {
+            // Get results here
+        }
+
+
     }
 }

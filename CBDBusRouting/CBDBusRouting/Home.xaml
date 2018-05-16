@@ -125,12 +125,12 @@
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Give Me Some Results!" HorizontalAlignment="Left" Height="38.839" Margin="373.367,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold">
+                    <Button Content="Give Me Some Results!" HorizontalAlignment="Left" Height="38.839" Margin="373.367,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold" Click="Button_Click_Gimme">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF5D5D5D"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Give Me Some Results!" HorizontalAlignment="Left" Height="26.299" Margin="373.367,13.791,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+                    <Button Content="Give Me Some Results!" HorizontalAlignment="Left" Height="26.299" Margin="373.367,13.791,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click_Gimme">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
