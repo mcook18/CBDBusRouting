@@ -44,5 +44,10 @@ namespace CBDBusRouting
             Locations locations = new Locations();
             this.NavigationService.Navigate(locations);
         }
+
+        private void Button_Click_R(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
