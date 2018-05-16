@@ -55,6 +55,34 @@ namespace CBDBusRouting
             // Get results here
         }
 
+        private void Button_Click_EditB(object sender, RoutedEventArgs e)
+        {
+            // Edit buses here
+        }
 
-    }
+        private void Button_Click_BusDelete(object sender, RoutedEventArgs e)
+        {
+            // Delete buses here
+        }
+
+        private void Button_Click_LSave(object sender, RoutedEventArgs e)
+        {
+            // Save Locations here
+        }
+
+        private void Button_Click_GSave(object sender, RoutedEventArgs e)
+        {
+            // Save groups here
+        }
+
+        private void Button_Click_LocEdit(object sender, RoutedEventArgs e)
+        {
+            // Edit locations here
+        }
+
+        private void Button_Click_LocDelete(object sender, RoutedEventArgs e)
+        {
+            // Delete locations here
+        }
+     }
 }

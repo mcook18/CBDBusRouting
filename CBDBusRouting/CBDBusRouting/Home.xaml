@@ -33,7 +33,7 @@
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="268.314,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" Grid.Column="1" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16">
+                    <Button Content="Save It!!" HorizontalAlignment="Left" Height="38.839" Margin="268.314,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" Grid.Column="1" FontFamily="Leelawadee UI" FontWeight="Bold" FontSize="16" Click="Button_Click_GSave">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
@@ -71,17 +71,17 @@
                         </Button.Effect>
                     </Button>
                     <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2" Background="White"/>
-                    <Button Content="Edit Location" HorizontalAlignment="Right" Height="28.8" Margin="0,13.37,173.2,0" VerticalAlignment="Top" Width="131.2" FontSize="14" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
+                    <Button Content="Edit Location" HorizontalAlignment="Right" Height="28.8" Margin="0,13.37,173.2,0" VerticalAlignment="Top" Width="131.2" FontSize="14" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_LocEdit">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Delete Location" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="136" FontSize="14" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
+                    <Button Content="Delete Location" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="136" FontSize="14" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_LocDelete">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Save it!" HorizontalAlignment="Left" Height="38.839" Margin="640.567,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold">
+                    <Button Content="Save it!" HorizontalAlignment="Left" Height="38.839" Margin="640.567,469.832,0,0" VerticalAlignment="Top" Width="427.139" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold" Click="Button_Click_LSave">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF5D5D5D"/>
                         </Button.Effect>
@@ -115,12 +115,12 @@
                         </Button.Effect>
                     </Button>
                     <ListBox HorizontalAlignment="Left" Height="402.1" Margin="10,46.34,0,0" VerticalAlignment="Top" Width="1167.6" Grid.ColumnSpan="2" Background="White"/>
-                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
+                    <Button Content="Edit Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,149.2,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_EditB">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
                     </Button>
-                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold">
+                    <Button Content="Delete Bus" HorizontalAlignment="Right" Height="28.8" Margin="0,12.54,10,0" VerticalAlignment="Top" Width="120" FontSize="14" Grid.Column="1" Background="#FFB81F31" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click_BusDelete">
                         <Button.Effect>
                             <DropShadowEffect Color="#FF797979"/>
                         </Button.Effect>
