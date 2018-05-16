@@ -84,5 +84,15 @@ namespace CBDBusRouting
         {
             // Delete locations here
         }
+
+        private void Button_Click_GEdit(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_GDelete(object sender, RoutedEventArgs e)
+        {
+
+        }
      }
 }
