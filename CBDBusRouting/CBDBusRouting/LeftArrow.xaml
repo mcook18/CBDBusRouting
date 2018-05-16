@@ -10,6 +10,5 @@
     <Grid>
 
         <ed:BlockArrow Grid.Column="1" Fill="#FFB81F31" HorizontalAlignment="Left" Height="80" Margin="0,0,-135,-80" Orientation="Left" Stroke="Black" VerticalAlignment="Top" Width="135"/>
-
     </Grid>
 </UserControl>

@@ -9,6 +9,6 @@
       Title="LoadingPage">
 
     <Grid Background="White">
-        
+       <!-- <Image Source=""></Image>-->
     </Grid>
 </Page>
