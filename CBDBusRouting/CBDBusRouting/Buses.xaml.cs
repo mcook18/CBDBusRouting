@@ -31,5 +31,13 @@ namespace CBDBusRouting
             this.NavigationService.Navigate(home);
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // go home
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
+
+        }
     }
 }
