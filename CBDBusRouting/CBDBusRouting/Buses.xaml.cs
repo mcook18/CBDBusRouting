@@ -29,5 +29,13 @@ namespace CBDBusRouting
         {
             throw new NotImplementedException();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // go home
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
+
+        }
     }
 }
