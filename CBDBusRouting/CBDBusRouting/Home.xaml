@@ -41,7 +41,7 @@
                         this is where we will have the user select an item in the list then hit one either edit or delete-->
                 </Grid>
             </TabItem>
-            <TabItem Header="Busses" BorderBrush="#FF8E0000" FontSize="16" FontFamily="Leelawadee UI">
+            <TabItem Header="buses" BorderBrush="#FF8E0000" FontSize="16" FontFamily="Leelawadee UI">
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>

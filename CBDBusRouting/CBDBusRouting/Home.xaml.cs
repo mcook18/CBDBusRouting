@@ -35,8 +35,8 @@ namespace CBDBusRouting
 
         private void Button_Click_B(object sender, RoutedEventArgs e)
         {
-            Busses busses = new Busses();
-            this.NavigationService.Navigate(busses);
+            buses buses = new buses();
+            this.NavigationService.Navigate(buses);
         }
 
         private void Button_Click_L(object sender, RoutedEventArgs e)
