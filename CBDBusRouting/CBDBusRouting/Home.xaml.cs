@@ -94,7 +94,7 @@ namespace CBDBusRouting
 
         private void Button_Click_Gimme(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("The algorithm will take a few seconds to run, please be patient.");
+            MessageBox.Show("The algorithm will take a few seconds to run, hold your horses!");
             // Get results here
             vm.prepAndRunAlgorithm();
 
@@ -102,7 +102,9 @@ namespace CBDBusRouting
             {
                 string resultsFilename = "Results_" + DateTime.Now.ToFileTime() + ".csv";
                 vm.csv.outputResultsCsv(vm.results, resultsFilename);
-                MessageBox.Show("The algorithm has completed.  The output file is named " + resultsFilename);
+                save();
+                vm.csv.openResultsFile(resultsFilename);
+                Application.Current.Shutdown();
             }
             else
             {
