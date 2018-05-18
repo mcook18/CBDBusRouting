@@ -485,6 +485,7 @@ namespace CBDBusRouting
                 {
                     //VERY BAD. THERE ARE NO ACCESSIBLE BUSES FOR THE ACCESSIBLE GROUPS
                     validSolution = false;
+                    return;
                     invalidSolString = "No accessible buses to accommodate groups with accessibility needs";
                 }
 
@@ -619,6 +620,17 @@ namespace CBDBusRouting
             }
             fillBuses();
             moveOnes();
+
+            int groupCounter = 0;
+            for (int bus = 0; bus < buses.Count(); bus++)
+            {
+                groupCounter += buses[bus].groups.Count();
+            }
+            if (groupCounter < groups.Count() + aGroups.Count())
+            {
+                validSolution = false;
+                Console.WriteLine("Invalid solution");
+            }
 
             if (validSolution)
             {
