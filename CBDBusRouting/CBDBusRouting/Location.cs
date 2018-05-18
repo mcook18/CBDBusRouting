@@ -101,7 +101,7 @@ namespace CBDBusRouting
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error calculating distance: The Geocoding API has run out of daily calls.  Please wait until the next day to run the program again.");
+                MessageBox.Show("Error calculating location's latitude & longitude: " + ex.Message);
             }
         }
 
@@ -204,7 +204,7 @@ namespace CBDBusRouting
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error calculating distance: The Distance Matrix API has run out of daily calls.  Please wait until the next day to run the program again.");
+                MessageBox.Show("Error calculating distance: " + ex.Message);
                 Console.WriteLine("error");
             }
         }

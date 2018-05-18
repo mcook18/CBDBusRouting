@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,7 @@ namespace CBDBusRouting
 
         public void readInLocationsAndDistances(List<Location> allLocations)
         {
-            string locationDataFilename = "StoredData\\LocationData.csv";
+            string locationDataFilename = "LocationData.csv";
             int numSavedLocations = File.ReadLines(locationDataFilename).Count() - 2;
             // 2D array from saving location travel times for later use in dictionary
             string[,] locationData = new string[numSavedLocations, numSavedLocations];
@@ -59,7 +58,7 @@ namespace CBDBusRouting
 
         public void readInGroups(List<Group> allGroups, List<Location> allLocations)
         {
-            string groupDataFilename = "StoredData\\GroupData.csv";
+            string groupDataFilename = "GroupData.csv";
             int numSavedGroups = File.ReadLines(groupDataFilename).Count() - 2;
 
             using (StreamReader sr = new StreamReader(groupDataFilename))
@@ -96,7 +95,7 @@ namespace CBDBusRouting
 
         public void readInBuses(List<BusForView> allBuses)
         {
-            string busDataFilename = "StoredData\\BusData.csv";
+            string busDataFilename = "BusData.csv";
             int numSavedBuses = File.ReadLines(busDataFilename).Count() - 2;
 
             using (StreamReader sr = new StreamReader(busDataFilename))
@@ -121,7 +120,7 @@ namespace CBDBusRouting
         // Creates location object and outputs an updated LocationData.csv file
         public void outputLocationDataCsv(List<Location> allLocations)
         {
-            string filename = "StoredData\\LocationData.csv";
+            string filename = "LocationData.csv";
 
             StringBuilder sb = new StringBuilder();
             // Standard row header format
@@ -155,7 +154,7 @@ namespace CBDBusRouting
 
         public void outputGroupsDataCsv(List<Group> allGroups)
         {
-            string filename = "StoredData\\GroupData.csv";
+            string filename = "GroupData.csv";
 
             StringBuilder sb = new StringBuilder();
             // Standard row header format
@@ -179,7 +178,7 @@ namespace CBDBusRouting
 
         public void outputBusDataCsv(List<BusForView> allBuses)
         {
-            string filename = "StoredData\\BusData.csv";
+            string filename = "BusData.csv";
 
             StringBuilder sb = new StringBuilder();
             // Standard row header format
@@ -253,11 +252,6 @@ namespace CBDBusRouting
             {
                 sw.WriteLine(sb.ToString());
             }
-        }
-
-        public void openResultsFile(string filename)
-        {
-            Process.Start(filename);
         }
     }
 }

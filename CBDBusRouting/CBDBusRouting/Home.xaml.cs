@@ -94,28 +94,13 @@ namespace CBDBusRouting
 
         private void Button_Click_Gimme(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("The algorithm will take a few seconds to run, hold your horses!");
+            MessageBox.Show("The algorithm will take a few seconds to run, please be patient.");
             // Get results here
             vm.prepAndRunAlgorithm();
 
-            if (vm.results.Count() != 0)
-            {
-                string resultsFilename = "Results_" + DateTime.Now.ToFileTime() + ".csv";
-                vm.csv.outputResultsCsv(vm.results, resultsFilename);
-                save();
-                vm.csv.openResultsFile(resultsFilename);
-                Application.Current.Shutdown();
-            }
-            else
-            {
-                MessageBox.Show("The algorithm couldn't find a solution for the current setup.\n" +
-                    "Consider the following when trying to find a valid setup:\n" +
-                    "-Are there enough buses to fit all the groups?\n" +
-                    "-Are there enough accessible buses to accommodate the groups with accessibility needs?\n" +
-                    "-Are all the groups that you want to include in the right-side box in the Groups page?\n" +
-                    "-Is there a location that is more than 40 minutes away? If so, consider excluding it from this program, just remember to give them a bus on Community Building Day!\n" +
-                    "-If you had a setup that worked before, did you forget to save your changes after running it?");
-            }
+            string resultsFilename = "Results_" + DateTime.Now.ToFileTime() + ".csv";
+            vm.csv.outputResultsCsv(vm.results, resultsFilename);
+            MessageBox.Show("The algorithm has completed.  The output file is named " + resultsFilename);
         }
 
         private void Button_Click_EditB(object sender, RoutedEventArgs e)
