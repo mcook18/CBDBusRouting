@@ -81,7 +81,7 @@ namespace CBDBusRouting
             try
             {
                 string geocodingApiUrl = ConfigurationManager.AppSettings["GoogleGeocodingApi"];
-                string apiKey = ConfigurationManager.AppSettings["GeocodingApiKey"];
+                string apiKey = ConfigurationManager.AppSettings["GeocodingApiServplicity"];
 
                 string addressUrl = formatForGeocodingUrl(address + "," + city + "," + state);
 
@@ -138,7 +138,7 @@ namespace CBDBusRouting
             {
                 // Referencing App.config
                 string distanceApiUrl = ConfigurationManager.AppSettings["GoogleDistanceMatrixApi"];
-                string distanceMatrixApiKey = ConfigurationManager.AppSettings["DistanceMatrixApiKey"];
+                string distanceMatrixApiKey = ConfigurationManager.AppSettings["DistanceMatrixApiServplicity"];
 
                 string locations = "";
 
