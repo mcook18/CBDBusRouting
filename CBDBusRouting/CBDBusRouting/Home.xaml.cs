@@ -1,0 +1,200 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace CBDBusRouting
+{
+    /// <summary>
+    /// Interaction logic for Home.xaml
+    /// </summary>
+    public partial class Home : Page
+    {
+        public ViewModel vm;
+        public Home()
+        {
+            InitializeComponent();
+            vm = new ViewModel();
+
+            refreshListBoxes();
+            LocationList.ItemsSource = vm.allLocations;
+            BusList.ItemsSource = vm.allBusSettings;
+        }
+
+        // after adding or editing a group
+        public Home(ViewModel vm)
+        {
+            InitializeComponent();
+            this.vm = vm;
+            refreshListBoxes();
+        }
+
+        // constructor used to show either location or bus tab immediately - determined by comingFromLocation boolean
+        public Home(ViewModel vm, bool comingFromLocation)
+        {
+            InitializeComponent();
+            this.vm = vm;
+            refreshListBoxes();
+            if (comingFromLocation)
+            {
+                Tabs.SelectedIndex = 1;
+            }
+            else
+            {
+                Tabs.SelectedIndex = 2;
+            }
+            refreshListBoxes();
+        }
+
+        private void refreshListBoxes()
+        {
+            CompleteList.ItemsSource = vm.allGroups.Where<Group>(g => g.runFlag == false);
+            RunList.ItemsSource = vm.allGroups.Where<Group>(g => g.runFlag == true);
+            LocationList.ItemsSource = vm.allLocations;
+            BusList.ItemsSource = vm.allBusSettings;
+            LocationList.Items.Refresh();
+            BusList.Items.Refresh();
+        }
+
+        private void save()
+        {
+            // Locations are saved in the csv as they are created
+            vm.csv.outputGroupsDataCsv(vm.allGroups);
+            vm.csv.outputBusDataCsv(vm.allBusSettings);
+            vm.csv.outputLocationDataCsv(vm.allLocations);
+        }
+
+        private void Button_Click_G(object sender, RoutedEventArgs e)
+        {   
+            //go to groups page from home
+            this.NavigationService.Navigate(new GroupsPage(vm));
+
+        }
+
+        private void Button_Click_B(object sender, RoutedEventArgs e)
+        {
+            BusesPage busesPage = new BusesPage(vm);
+            this.NavigationService.Navigate(busesPage);
+        }
+
+        private void Button_Click_L(object sender, RoutedEventArgs e)
+        {
+            Locations locations = new Locations(vm);
+            this.NavigationService.Navigate(locations);
+        }
+
+        private void Button_Click_R(object sender, RoutedEventArgs e)
+        {
+            // Refresh locations here
+            
+        }
+
+        private void Button_Click_Gimme(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("The algorithm will take a few seconds to run, please be patient.");
+            // Get results here
+            vm.prepAndRunAlgorithm();
+
+            string resultsFilename = "Results_" + DateTime.Now.ToFileTime() + ".csv";
+            vm.csv.outputResultsCsv(vm.results, resultsFilename);
+            MessageBox.Show("The algorithm has completed.  The output file is named " + resultsFilename);
+            Application.Current.Shutdown();
+        }
+
+        private void Button_Click_EditB(object sender, RoutedEventArgs e)
+        {
+            // Edit buses here
+            this.NavigationService.Navigate(new BusesPage(vm, BusList.SelectedItem as BusForView));
+        }
+
+        private void Button_Click_BusDelete(object sender, RoutedEventArgs e)
+        {
+            // Delete buses here
+            BusForView toDelete = BusList.SelectedItem as BusForView;
+            vm.allBusSettings.Remove(toDelete);
+            refreshListBoxes();
+        }
+
+        private void Button_Click_LSave(object sender, RoutedEventArgs e)
+        {
+            // Save Locations here
+            save();
+        }
+
+        private void Button_Click_GSave(object sender, RoutedEventArgs e)
+        {
+            // Save groups here
+            save();
+        }
+
+        private void Button_Click_LocDelete(object sender, RoutedEventArgs e)
+        {
+            // Delete locations here
+            Location toDelete = LocationList.SelectedItem as Location;
+            vm.allLocations.Remove(toDelete);
+            foreach(Location loc in vm.allLocations)
+            {
+                loc.distanceDict.Remove(toDelete);
+            }
+
+            foreach(Group g in vm.allGroups)
+            {
+                if(g.destination == toDelete)
+                {
+                    g.destination.address = null;
+                    g.destination.city = null;
+                    g.destination.state = null;
+                    g.runFlag = false;
+                }
+            }
+            
+            refreshListBoxes();
+        }
+
+        private void Button_Click_GEdit(object sender, RoutedEventArgs e)
+        {
+            //go to groups page from home
+            this.NavigationService.Navigate(new GroupsPage(vm, CompleteList.SelectedItem as Group));
+        }
+
+        private void Button_Click_GDelete(object sender, RoutedEventArgs e)
+        {
+            Group toDelete = CompleteList.SelectedItem as Group;
+            vm.allGroups.Remove(toDelete);
+            refreshListBoxes();
+        }
+
+        private void MoveRunGroupToAllGroup_Click(object sender, RoutedEventArgs e)
+        {
+            Group temp = RunList.Items.CurrentItem as Group;
+            temp.flipRunFlag();
+            refreshListBoxes();
+
+        }
+
+        private void MoveAllGroupToRunGroup_Click(object sender, RoutedEventArgs e)
+        {
+            Group temp = CompleteList.Items.CurrentItem as Group;
+            if (temp.destination.address == null)
+            {
+                MessageBox.Show("This group's location was deleted. Please edit the group's location.");
+            }
+            else
+            {
+                temp.flipRunFlag();
+                refreshListBoxes();
+            }
+        }
+    }
+}
