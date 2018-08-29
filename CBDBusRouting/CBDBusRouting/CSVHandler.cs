@@ -155,7 +155,7 @@ namespace CBDBusRouting
 
         public void outputGroupsDataCsv(List<Group> allGroups)
         {
-            string filename = "GroupData.csv";
+            string filename = "StoredDataDoNotTouch\\GroupData.csv";
 
             StringBuilder sb = new StringBuilder();
             // Standard row header format

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\cs1\2018\droberts18\CS-472-1\CBDBusRouting\CBDBusRouting\obj\Debug\
+C:\Users\mcnad\Documents\CBDBusRouting\CBDBusRouting\CBDBusRouting\obj\Debug\
 CBDBusRouting
 none
 false
 DEBUG;TRACE
-\\cs1\2018\droberts18\CS-472-1\CBDBusRouting\CBDBusRouting\App.xaml
+C:\Users\mcnad\Documents\CBDBusRouting\CBDBusRouting\CBDBusRouting\App.xaml
 9-242427258
-1-765434760
+11289261455
 221942843909
-201894399927
+2085437082
 Home.xaml;LeftArrow.xaml;LoadingPage.xaml;Locations.xaml;MainWindow.xaml;Groups.xaml;Buses.xaml;Results.xaml;RightArrow.xaml;
 
-False
+True
 
